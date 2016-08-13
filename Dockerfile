@@ -72,4 +72,4 @@ RUN cd /src; npm install
 
 EXPOSE 5000
 
-CMD cd /src && npm run build -- --release && NODE_ENV=production node /src/build/server.js
+CMD cd /src && npm start -- --release && NODE_ENV=production node /src/server.js
