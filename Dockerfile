@@ -2,42 +2,43 @@ FROM buildpack-deps:wheezy-scm
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN apt-get update && apt-get install -y --no-install-recommends \
-		autoconf \
-		automake \
-		bzip2 \
-		file \
-		g++ \
-		gcc \
-		imagemagick \
-		libbz2-dev \
-		libc6-dev \
-		libcurl4-openssl-dev \
-		libdb-dev \
-		libevent-dev \
-		libffi-dev \
-		libgeoip-dev \
-		libglib2.0-dev \
-		libjpeg-dev \
-		liblzma-dev \
-		libmagickcore-dev \
-		libmagickwand-dev \
-		libmysqlclient-dev \
-		libncurses-dev \
-		libpng-dev \
-		libpq-dev \
-		libreadline-dev \
-		libsqlite3-dev \
-		libssl-dev \
-		libtool \
-		libwebp-dev \
-		libxml2-dev \
-		libxslt-dev \
-		libyaml-dev \
-		make \
-		patch \
-		xz-utils \
-		zlib1g-dev \
-    libgd2-xpm-dev \
+  		autoconf \
+  		automake \
+  		bzip2 \
+  		file \
+  		g++ \
+  		gcc \
+  		imagemagick \
+  		libbz2-dev \
+  		libc6-dev \
+  		libcurl4-openssl-dev \
+  		libdb-dev \
+  		libevent-dev \
+  		libffi-dev \
+  		libgeoip-dev \
+  		libglib2.0-dev \
+  		libjpeg-dev \
+  		liblzma-dev \
+  		libmagickcore-dev \
+  		libmagickwand-dev \
+  		libmysqlclient-dev \
+  		libncurses-dev \
+  		libpng-dev \
+  		libpq-dev \
+  		libreadline-dev \
+  		libsqlite3-dev \
+  		libssl-dev \
+  		libtool \
+  		libwebp-dev \
+  		libxml2-dev \
+  		libxslt-dev \
+  		libyaml-dev \
+  		make \
+  		patch \
+  		xz-utils \
+  		zlib1g-dev \
+      libgd2-xpm-dev \
+    && rm -rf /var/lib/apt/lists/*
 RUN set -ex \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
