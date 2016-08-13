@@ -1,6 +1,5 @@
 FROM buildpack-deps:wheezy-scm
 
-# gpg keys listed at https://github.com/nodejs/node
 RUN apt-get update && apt-get install -y --no-install-recommends \
   		autoconf \
   		automake \
@@ -36,7 +35,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   		make \
   		patch \
   		xz-utils \
-  		zlib1g-dev \
       libgd2-xpm-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN set -ex \
