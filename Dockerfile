@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM buildpack-deps:wheezy-scm
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN apt-get update && apt-get install -y --no-install-recommends \
