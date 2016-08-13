@@ -10,12 +10,12 @@ module.exports = {
   maxFileSize: 10485760, // 10MB
   maxPostSize: 10485760, // 10MB
   acceptFileTypes: /.+/i,
-  imageTypes: /\.(jpe?g)$/i,
+  imageTypes: /\.(gif|jpe?g|png|bmp|swf)$/i,
   imageVersions: {
     'welcome': {
       width: 820,
       height: 500
-    },]
+    }
   },
   accessControl: {
     allowOrigin: '*',
