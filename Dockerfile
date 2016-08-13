@@ -1,7 +1,7 @@
 FROM buildpack-deps:wheezy
 
 # gpg keys listed at https://github.com/nodejs/node
-RUN apt-get update --qq
+RUN sudo apt-get update --qq
 RUN apt-get install -qq -y --no-install-recommends libgd2-xpm-dev
 RUN set -ex \
   && for key in \
